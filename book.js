@@ -31,6 +31,7 @@ function addBook() {
     let pages = prompt('Enter the number of pages in the book');
     let book = new Book(title, author, pages);
     library.push(book);
+    console.log(`The book ${title} has been added to the library.`);
 }
 
 function searchByTitle(title) {
